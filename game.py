@@ -122,7 +122,6 @@ class Game:
         elif keys[pygame.K_UP]:
             if self.check_collision((0, -1)):
                 self.pacman.set_direction((0,-1))
-                          
 
 
     def check_collision(self, direction):
