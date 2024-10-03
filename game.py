@@ -101,7 +101,6 @@ class Game:
         if keys[pygame.K_RIGHT]:
             if self.check_collision((1,0)):
                 self.pacman.set_direction((1,0))
-                print("right")
 
         # TODO: Vérifiez si la touche pressée est la flèche gauche
                     # TODO: Vérifiez si Pac-Man peut se déplacer à gauche sans entrer en collision
@@ -109,7 +108,6 @@ class Game:
         elif keys[pygame.K_LEFT]:
             if self.check_collision((-1, 0)):
                 self.pacman.set_direction((-1,0))
-                print("left")
 
         # TODO: Vérifiez si la touche pressée est la flèche vers le bas
             # TODO: Vérifiez si Pac-Man peut se déplacer vers le bas sans entrer en collision
@@ -117,7 +115,6 @@ class Game:
         elif keys[pygame.K_DOWN]:
             if self.check_collision((0, 1)):
                 self.pacman.set_direction((0,1))
-                print("down")
 
         # TODO: Vérifiez si la touche pressée est la flèche vers le haut
                     # TODO: Vérifiez si Pac-Man peut se déplacer vers le haut sans entrer en collision
@@ -125,7 +122,6 @@ class Game:
         elif keys[pygame.K_UP]:
             if self.check_collision((0, -1)):
                 self.pacman.set_direction((0,-1))
-                print("up")
                           
 
 
